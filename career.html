@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer - Career</title>
+    <link rel="stylesheet" href="career.css">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d26ed70e0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" alt="Freelancer" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="signin.html">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mb-5">
+        <!-- Hero Section -->
+        <div class="container text-center mt-5 mb-5">
+            <h1 class="display-4 fw-bold">Careers at Freelancer</h1>
+            <p class="lead text-muted">Join us in building the world's largest freelancing marketplace.</p>
+            <img src="https://www.f-cdn.com/assets/main/en/assets/home/make-it-real/make-it-real-bg-ld.jpg" alt="Team" class="img-fluid rounded mt-4" style="max-height: 400px; object-fit: cover; width: 100%;">
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="container mb-5">
+            <h2 class="text-center mb-4">Why work with us?</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light p-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Global Impact</h5>
+                            <p class="card-text">Build products used by millions of professionals worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light p-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Great Culture</h5>
+                            <p class="card-text">We value innovation, creativity, and a healthy work-life balance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light p-3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Career Growth</h5>
+                            <p class="card-text">Learn from the best and take your career to the next level.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Open Roles -->
+        <div class="container">
+            <h2 class="mb-4">Open Positions</h2>
+            <ul class="list-group list-group-flush border rounded">
+                <li class="list-group-item d-flex justify-content-between align-items-center p-4">
+                    <div>
+                        <h5 class="mb-1">Senior Frontend Engineer</h5>
+                        <small class="text-muted">Sydney, Australia / Remote</small>
+                    </div>
+                    <button class="btn btn-outline-primary">Apply</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-4">
+                    <div>
+                        <h5 class="mb-1">Product Manager</h5>
+                        <small class="text-muted">London, UK / Remote</small>
+                    </div>
+                    <button class="btn btn-outline-primary">Apply</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center p-4">
+                    <div>
+                        <h5 class="mb-1">Data Scientist</h5>
+                        <small class="text-muted">New York, USA / Remote</small>
+                    </div>
+                    <button class="btn btn-outline-primary">Apply</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3" id="logo_column">
+                    <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" alt="">
+                    <div class="logo_text">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M325-111.5q-73-31.5-127.5-86t-86-127.5Q80-398 80-480.5t31.5-155q31.5-72.5 86-127t127.5-86Q398-880 480.5-880t155 31.5q72.5 31.5 127 86t86 127Q880-563 880-480.5T848.5-325q-31.5 73-86 127.5t-127 86Q563-80 480.5-80T325-111.5ZM480-162q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                        </svg>
+                        <a href="">US (International) / English</a>
+                    </div>
+                    <div class="logo_text">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M513.5-254.5Q528-269 528-290t-14.5-35.5Q499-340 478-340t-35.5 14.5Q428-311 428-290t14.5 35.5Q457-240 478-240t35.5-14.5ZM442-394h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                        </svg>
+                        <a href="">Help & Support</a>
+                    </div>
+                    <div class="logo_text">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M423.5-743.5Q400-767 400-800t23.5-56.5Q447-880 480-880t56.5 23.5Q560-833 560-800t-23.5 56.5Q513-720 480-720t-56.5-23.5ZM360-80v-520q-60-5-122-15t-118-25l20-80q78 21 166 30.5t174 9.5q86 0 174-9.5T820-720l20 80q-56 15-118 25t-122 15v520h-80v-240h-80v240h-80Z" />
+                        </svg>
+                        <a href="">Accessibility</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h6>Freelancer</h6>
+                    <a href="#">Categories</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contests</a>
+                    <a href="#">Freelancers</a>
+                    <a href="#">Enterprise</a>
+                    <a href="#">Membership</a>
+                    <a href="#">Preferred Freelancer Program</a>
+                    <a href="#">Project Management</a>
+                    <a href="#">Local Jobs</a>
+                    <a href="#">Photo Anywhere</a>
+                    <a href="#">Showcase</a>
+                    <a href="#">API for Developers</a>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h6>About</h6>
+                    <a href="#">About us</a>
+                    <a href="#">How it Works</a>
+                    <a href="#">Security</a>
+                    <a href="#">Investor</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Stories</a>
+                    <a href="#">News</a>
+                    <a href="#">Team</a>
+                    <a href="#">Awards</a>
+                    <a href="#">Press Releases</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h6>Terms</h6>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Copyright Policy</a>
+                    <a href="#">Code of Conduct</a>
+                    <a href="#">Fees and Charges</a>
+                </div>
+                <div class="col-6 col-md-3 mb-3" id="footer_column">
+                    <h4>Apps</h4>
+                    <div class="app">
+                        <a href="">
+                            <img src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg"
+                                alt="Download on the App Store">
+                        </a>
+                    </div>
+                    <div class="app">
+                        <a href="">
+                            <img src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg"
+                                alt="Get it on Google Play">
+                        </a>
+                    </div>
+                    <div class="socials">
+                        <a href="">
+                            <i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M143.5-143.5Q120-167 120-200t23.5-56.5Q167-280 200-280t56.5 23.5Q280-233 280-200t-23.5 56.5Q233-120 200-120t-56.5-23.5ZM680-120q0-117-44-218.5T516-516q-76-76-177.5-120T120-680v-120q142 0 265 53t216 146q93 93 146 216t53 265H680Zm-240 0q0-67-25-124.5T346-346q-44-44-101.5-69T120-440v-120q92 0 171.5 34.5T431-431q60 60 94.5 139.5T560-120H440Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bottom-footer">
+                <div class="col-md-3">
+                    <p>89,782,228</p>
+                    <p>Registered Users</p>
+                </div>
+                <div class="col-md-4">
+                    <p>25,814,209</p>
+                    <p>Total Jobs Posted</p>
+                </div>
+                <div class="col-md-5 text-end">
+                    Freelancer ® is a registered Trademark of Freelancer Technology Pty Limited (ACN 142 189 759)<br>
+                    Copyright © 2026 Freelancer Technology Pty Limited (ACN 142 189 759)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer - Preferred Program</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="program.css">
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4d26ed70e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+         <nav>
+            <div class="left">
+                <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" alt="picture">
+                <details class="main" name="nav_dropdown">
+                    <summary>
+                        Hire freelancers
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="FFFFFF">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </summary>
+                    <div class="drop">
+                        <div class="labels">
+                            <div class="text">
+                                <h4>By skill</h4>
+                                <p>Looking for a freelancer with a specific skill? Start here.</p>
+                            </div>
+                            <div class="text">
+                                <h4>By location</h4>
+                                <p>Search for freelancers based on their location and timezone.</p>
+                            </div>
+                            <div class="text">
+                                <h4>By category</h4>
+                                <p>Find freelancers that suit a certain project category.</p>
+                            </div>
+                        </div>
+                        <div class="sd_drop">
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/hire-skills/graphic-design.png"
+                                    alt="">
+                                <p>Graphic designers</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/hire-skills/website.png"
+                                    alt="">
+                                <p>Website designers</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/hire-skills/mobile.png"
+                                    alt="">
+                                <p>Mobile app developers</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/hire-skills/sd.png"
+                                    alt="">
+                                <p>Software developers</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/hire-skills/3d.png"
+                                    alt="">
+                                <p>3D artists</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/hire-skills/illustration.png"
+                                    alt="">
+                                <p>Illustration</p>
+                            </div>
+                        </div>
+                        <div class="more_list">
+                            <h4>Other popular skills</h4>
+                            <p>Web developers</p>
+                            <p>Writers</p>
+                            <p>Marketing specialists</p>
+                            <p>SEO specialists</p>
+                            <p>Data entry clerks</p>
+                            <p>Virtual assistants</p>
+                            <p>Translators</p>
+                            <p>Financial experts</p>
+                            <a href="">View more ></a>
+                        </div>
+                    </div>
+                </details>
+                <details class="main" name="nav_dropdown">
+                    <summary>
+                        Find work
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </summary>
+                    <div class="drop">
+                        <div class="labels">
+                            <div class="text">
+                                <h4>By skill</h4>
+                                <p>Search for work that requires a particular skill.</p>
+                            </div>
+                            <div class="text">
+                                <h4>By language</h4>
+                                <p>Find projects that are in your language.</p>
+                            </div>
+                            <div class="text">
+                                <h4>Featured jobs</h4>
+                                <p>Explore our current list of excited top featured projects.</p>
+                            </div>
+                            <div class="text">
+                                <h4>Find contests</h4>
+                                <p>Unleash your talent and find freelancer contests to enter.</p>
+                            </div>
+                        </div>
+                        <div class="sd_drop">
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/find-job/website.png"
+                                    alt="">
+                                <p>Website jobs</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/find-job/graphic-design.png"
+                                    alt="">
+                                <p>Graphic design jobs</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/find-job/data-entry.png"
+                                    alt="">
+                                <p>Data entry jobs</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/find-job/mobile.png"
+                                    alt="">
+                                <p>Mobile app development jobs</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/find-job/internet-marketing.png"
+                                    alt="">
+                                <p>Internet marketing jobs</p>
+                            </div>
+                            <div class="images">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/find-job/local.png"
+                                    alt="">
+                                <p>Local jobs</p>
+                            </div>
+                        </div>
+                        <div class="more_list">
+                            <h4>Other popular jobs</h4>
+                            <p>Software development jobs</p>
+                            <p>Internet marketing jobs</p>
+                            <p>Data entry jobs</p>
+                            <p>SEO jobs</p>
+                            <p>Writing jobs</p>
+                            <p>Legal jobs</p>
+                            <p>Finance jobs</p>
+                            <p>Manufacturing jobs</p>
+                            <a href="">View more ></a>
+                        </div>
+                    </div>
+                </details>
+                <details class="main" name="nav_dropdown">
+                    <summary>
+                        Solutions
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg>
+                    </summary>
+                    <div class="drop">
+                        <div class="solutions_drop">
+                            <div class="card">
+                                <div class="text">
+                                    <h4>Enterprise</h4>
+                                    <p>Power your competitive advantage with Freelancer Enterprise.</p>
+                                </div>
+                                <div class="text">
+                                    <h4>Innovation Challenges</h4>
+                                    <p>Turn challenges into breakthroughs with the largest innovation hub.
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <h4>Field SErvices</h4>
+                                    <p>Deliver expertise anywhere in the world at scale - on demand.</p>
+                                </div>
+                                <div class="text">
+                                    <h4>Freelancer API</h4>
+                                    <p>Use the Freelancer API to access a cloud workforce of skilled freelancers.</p>
+                                </div>
+                                <div class="text">
+                                    <h4>AI for business</h4>
+                                    <p>Let experts in the latest AI technology transform your business. </p>
+                                </div>
+                                <div class="text">
+                                    <h4>Local jobs</h4>
+                                    <p>Get help in any location, anywhere in the world.</p>
+                                </div>
+                            </div>
+
+                            <div class="sd_footer">
+                                <div class="header">
+                                    Freelancer products
+                                    <div class="link">
+                                        <a href="">How it works</a>
+                                        <a href="">Contests</a>
+                                        <a href="">Quotes</a>
+                                        <a href="">Photo Anywhere</a>
+                                        <a href="">Showcase</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sd_footer">
+                                <div class="header">
+                                    Freelancer services
+                                    <div class="link">
+                                        <a href="">Preferrred Freelancer</a>
+                                        <a href="">Program</a>
+                                        <a href="">Verified by Freelancer</a>
+                                        <a href="">Project Management</a>
+                                        <a href="">Recruiter</a>
+                                        <a href="">Memberships</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side">
+                                <h4>How it works</h4>
+                                <div class="images">
+                                    <img src="" alt="">
+                                    <p>How to hire the perfect freelancer...</p>
+
+                                    href="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/solutions/how-it-works-1.jpg">Find
+                                    out more ></a>
+                                </div>
+                                <div class="images">
+                                    <img src="https://www.f-cdn.com/assets/main/en/assets/logged-out-navigation/solutions/how-it-works-2.png"
+                                        alt="">
+                                    <p>How to get started earning money...</p>
+                                    <a href="">Find out more ></a>
+                                </div>
+                                <div class="side_footer">
+                                    <div>
+                                        <h4>Get ideas</h4>
+                                    </div>
+                                    <div>
+                                        <p>Get Web Design ideas</p>
+                                        <p>Get Mobile App Ideas</p>
+                                        <p>Get Graphic Design ideas</p>
+                                        <p>Get Logo Design ideas</p>
+                                        <p>Get 3D Modelling ideas</p>
+                                        <p>Get Illustration ideas</p>
+                                        <p>Get Branding ideas</p>
+                                        <p>Get Product Design ideas</p>
+                                        <p>Get Package Design ideas</p>
+                                        <p>Get Wordpress Ideas</p>
+                                    </div>
+                                    <a href="">View all ></a>
+                                </div>
+                                <div class="side_footer">
+                                    <div>
+                                        <h4>Resources</h4>
+                                    </div>
+                                    <div>
+                                        <p>What is Adobe Photoshop</p>
+                                        <p>What ls Android App</p>
+                                        <p>Development</p>
+                                        <p>What ls Article Writing</p>
+                                        <p>What is Data Entry</p>
+                                        <p>What Is Graphic Design</p>
+                                        <p>What is HTML</p>
+                                        <p>What is internet Marketing</p>
+                                        <p>What is iPhone App Development</p>
+                                    </div>
+                                    <a href="">View all ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+
+            <div class="right">
+                <div class="lang">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M325-111.5q-73-31.5-127.5-86t-86-127.5Q80-398 80-480.5t31.5-155q31.5-72.5 86-127t127.5-86Q398-880 480.5-880t155 31.5q72.5 31.5 127 86t86 127Q880-563 880-480.5T848.5-325q-31.5 73-86 127.5t-127 86Q563-80 480.5-80T325-111.5ZM480-162q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                    </svg>
+                    EN
+                </div>
+                <a href="signin.html">Log in</a>
+                <a href="signup.html">Sign up</a>
+                <button class="post">Post a Project</button>
+                <div id="right">
+                    <button aria-label="Open menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </button>
+                    <div class="slide">
+                        <div class="slide_content">
+                            <div class="slide_header">
+                                <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" alt="Freelancer">
+                            </div>
+                            <div class="slide_links">
+                                <a href="index.html">Home</a>
+                                <a href="ai_development.html">AI Development</a>
+                                <a href="program.html">Preferred Freelancer Program</a>
+                                <a href="career.html">Careers</a>
+                                <a href="investor.html">Investor Centre</a>
+                                <hr>
+                                <a href="signin.html">Log in</a>
+                                <a href="signup.html">Sign up</a>
+                            </div>
+                            <button class="slide_post_btn" onclick="window.location.href='signup.html'">Post a Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="program-main">
+            <section class="program-hero">
+                <div class="hero-content">
+                    <h1>Preferred Freelancer Program</h1>
+                    <p>Access exclusive, high-value projects and work with premium clients as part of Freelancer's elite talent network.</p>
+                    <button class="cta-btn">Join the Elite</button>
+                </div>
+            </section>
+
+            <section class="program-benefits">
+                <h2>Exclusive Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-crown"></i>
+                        <h3>Exclusive Invites</h3>
+                        <p>Get directly invited to bid on high-budget enterprise and milestone projects.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>Dedicated Recruiter</h3>
+                        <p>Our in-house staff recommend you to clients looking for verified top-tier talent.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Priority Support</h3>
+                        <p>Fast-track customer service and technical assistance whenever you need it.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h3>Elite Badge</h3>
+                        <p>Stand out to clients with an official Preferred Freelancer trust badge on your profile.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+        <div class="footer_content">
+            <div class="logo_column">
+                <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-light.svg" alt="">
+                <div class="logo_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M325-111.5q-73-31.5-127.5-86t-86-127.5Q80-398 80-480.5t31.5-155q31.5-72.5 86-127t127.5-86Q398-880 480.5-880t155 31.5q72.5 31.5 127 86t86 127Q880-563 880-480.5T848.5-325q-31.5 73-86 127.5t-127 86Q563-80 480.5-80T325-111.5ZM480-162q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                    </svg>
+                    <a href="">US (International) / English</a>
+                </div>
+                <div class="logo_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M513.5-254.5Q528-269 528-290t-14.5-35.5Q499-340 478-340t-35.5 14.5Q428-311 428-290t14.5 35.5Q457-240 478-240t35.5-14.5ZM442-394h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                    </svg>
+                    <a href="">Help & Support</a>
+                </div>
+                <div class="logo_text">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M423.5-743.5Q400-767 400-800t23.5-56.5Q447-880 480-880t56.5 23.5Q560-833 560-800t-23.5 56.5Q513-720 480-720t-56.5-23.5ZM360-80v-520q-60-5-122-15t-118-25l20-80q78 21 166 30.5t174 9.5q86 0 174-9.5T820-720l20 80q-56 15-118 25t-122 15v520h-80v-240h-80v240h-80Z" />
+                    </svg>
+                    <a href="">Accessibility</a>
+                </div>
+            </div>
+
+            <div class="footer_column">
+                <h4>Freelancer</h4>
+                <a href="">Categories</a>
+                <a href="">Projects</a>
+                <a href="">Contests</a>
+                <a href="">Freelancers</a>
+                <a href="">Enterprise</a>
+                <a href="">Innovative Challenges</a>
+                <a href="ai_development.html">AI Development</a>
+                <a href="">Membership</a>
+                <a href="program.html">Preferred Freelancer Program</a>
+                <a href="">Project Management</a>
+                <a href="">Local Jobs</a>
+                <a href="">Photo Anywhere</a>
+                <a href="">Showcase</a>
+                <a href="">API for Developers</a>
+            </div>
+            <div class="footer_column">
+                <h4>About</h4>
+                <a href="">About us</a>
+                <a href="">How it Works</a>
+                <a href="">Security</a>
+                <a href="investor.html">Investor</a>
+                <a href="">Sitemap</a>
+                <a href="">Stories</a>
+                <a href="">News</a>
+                <a href="">Team</a>
+                <a href="">Awards</a>
+                <a href="">Press Releases</a>
+                <a href="career.html">Careers</a>
+            </div>
+            <div class="footer_column">
+                <h4>Terms</h4>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms and Conditions</a>
+                <a href="">Copyright Policy</a>
+                <a href="">Code of Conduct</a>
+                <a href="">Fees and Charges</a>
+            </div>
+            <div class="footer_column">
+                <h4>Partners</h4>
+                <a href="">Escrow.com</a>
+                <a href="">Loadshift</a>
+                <a href="">Warrior Forum</a>
+            </div>
+
+            <div class="footer_column apps">
+                <h4>Apps</h4>
+                <div class="app">
+                    <a href="">
+                        <img src="https://www.f-cdn.com/assets/main/en/assets/footer/app-store.svg"
+                            alt="Download on the App Store">
+                    </a>
+                </div>
+                <div class="app">
+                    <a href="">
+                        <img src="https://www.f-cdn.com/assets/main/en/assets/footer/google-play.svg"
+                            alt="Get it on Google Play">
+                    </a>
+                </div>
+                <div class="socials">
+                    <a href="">
+                        <i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="footer_stats">
+                <p>89,782,228</p>
+                <p>Registered Users</p>
+            </div>
+            <div class="footer_stats">
+                <p>25,814,209</p>
+                <p>Total Jobs Posted</p>
+            </div>
+            <div class="copyright">
+                <p>
+                    Freelancer ® is a registered Trademark of
+                    Freelancer Technology Pty Limited
+                    (ACN 142 189 759)
+                </p>
+                <p>
+                    Copyright © 2026 Freelancer Technology Pty Limited
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

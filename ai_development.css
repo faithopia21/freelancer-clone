@@ -1,0 +1,119 @@
+.ai-main {
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.ai-hero {
+    background: linear-gradient(135deg, #121B20 0%, #0c0c14 100%);
+    padding: 100px 35px;
+    text-align: center;
+}
+
+.ai-hero h1 {
+    font-size: 50px;
+    color: #4da6ff;
+    margin-bottom: 20px;
+}
+
+.ai-hero p {
+    font-size: 20px;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.cta-btn {
+    background-color: #E60278;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #c00263;
+}
+
+.ai-services {
+    background-color: #08090d;
+    padding: 80px 35px;
+    text-align: center;
+}
+
+.ai-services h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #12151b;
+    border: 1px solid #30343d;
+    border-radius: 8px;
+    padding: 40px;
+    width: 300px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #4da6ff;
+}
+
+.service-card p {
+    color: #bdbdbd;
+    line-height: 1.5;
+}
+
+/* media query */
+@media (max-width: 766.40px) {
+    .ai-hero {
+        padding: 50px 20px;
+    }
+
+    .ai-hero h1 {
+        font-size: clamp(28px, 7vw, 40px);
+    }
+
+    .ai-hero p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .ai-services {
+        padding: 50px 20px;
+    }
+
+    .ai-services h2 {
+        font-size: clamp(26px, 6vw, 34px);
+        margin-bottom: 30px;
+    }
+
+    .services-grid {
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 380px;
+        padding: 25px 20px;
+    }
+}
