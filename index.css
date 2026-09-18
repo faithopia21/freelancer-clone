@@ -116,12 +116,15 @@ body {
     background-color: #E60278; /* Pink button */
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 14px;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
     text-align: left;
     width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .project_info button:hover {
