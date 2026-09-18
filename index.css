@@ -1487,6 +1487,85 @@ footer {
     }
 }
 
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #000000;
+    border-left: 2px solid #0082f3;
+    padding: 60px 0 60px 40px;
+    margin: 40px 7%;
+    position: relative;
+    width: auto;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -14px;
+        top: 60px;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: #000000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 75'%3E%3Cpath fill='%23ffffff' d='M56.897 0l6.624 9.29L97.036 0M22.075 72.333l18.13-17.725-10.912-11.71M54.152 0l-9.69 8.738 16.298.608M16.482 0l3.48 7.133 19.18 1.195M26.75 36.986l14.17-26.434L-.23 8.328M28.4 38.662L41.785 53.04 56.55 38.567l4.582-26.957-17.993-.918'/%3E%3C/svg%3E");
+        background-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 12px 3px rgba(0, 180, 255, 0.9), 0 0 24px 6px rgba(0, 130, 255, 0.6);
+        border: 1px solid rgba(0, 210, 255, 0.9);
+        z-index: 10;
+    }
+
+    .cat-heading {
+        flex: 1;
+        font-size: 46px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1.2;
+        margin: 0;
+        padding-right: 40px;
+
+        .pink {
+            color: #e60278;
+        }
+    }
+
+    .category_list {
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .cat_col {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: color 0.2s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &.pink {
+                color: #e60278;
+                font-weight: 600;
+                
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+
 /* media query */
 @media (max-width: 959.20px) {
     .desktop_only {
@@ -2105,6 +2184,7 @@ footer {
         position: relative;
         width: auto;
         text-align: left;
+        display: block;
 
         &::before {
             content: '';
